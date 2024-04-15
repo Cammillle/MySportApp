@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MySportProject</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCHEUl5iRbAWHQkidrlBUG-eNGeN4CCbD0</string>
+
+    <string-array name="spinner">
+        <item>Today, 9 March 2023</item>
+        <item>Yesterday</item>
+    </string-array>
+</resources>
