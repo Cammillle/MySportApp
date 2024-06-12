@@ -76,6 +76,9 @@ dependencies {
 
     implementation("pl.droidsonroids.gif:android-gif-drawable:1.2.28")
 
+    implementation("com.seosh817:circularseekbar:1.0.2")
+    implementation("me.tankery.lib:circularSeekBar:1.4.2")
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)

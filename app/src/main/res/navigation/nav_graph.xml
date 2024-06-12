@@ -24,6 +24,9 @@
         <action
             android:id="@+id/action_startFragment_to_fitnessMainFragment"
             app:destination="@id/fitnessMainFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_nutritionFragment"
+            app:destination="@id/nutritionFragment" />
     </fragment>
     <fragment
         android:id="@+id/runFragment"
@@ -166,5 +169,14 @@
         <action
             android:id="@+id/action_waitingFragment2_to_exerciseFragment"
             app:destination="@id/exerciseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nutritionFragment"
+        android:name="com.example.mysportproject.ui.fragments.nutrition.NutritionFragment"
+        android:label="fragment_nutrition"
+        tools:layout="@layout/fragment_nutrition" >
+        <action
+            android:id="@+id/action_nutritionFragment_to_startFragment"
+            app:destination="@id/startFragment" />
     </fragment>
 </navigation>
