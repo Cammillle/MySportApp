@@ -3,20 +3,31 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/startFragment">
+    app:startDestination="@id/splashFragment">
+
+    <action
+        android:id="@+id/action_global_trackingFragment"
+        app:destination="@+id/trackingFragment"
+        app:launchSingleTop="true"/>
 
     <fragment
         android:id="@+id/startFragment"
-        android:name="com.example.mysportproject.ui.StartFragment"
+        android:name="com.example.mysportproject.ui.fragments.StartFragment"
         android:label="fragment_start"
         tools:layout="@layout/fragment_start" >
         <action
             android:id="@+id/action_startFragment_to_runFragment"
             app:destination="@id/runFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_reportsFragment"
+            app:destination="@id/reportsFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_fitnessMainFragment"
+            app:destination="@id/fitnessMainFragment" />
     </fragment>
     <fragment
         android:id="@+id/runFragment"
-        android:name="com.example.mysportproject.ui.RunFragment"
+        android:name="com.example.mysportproject.ui.fragments.running.RunFragment"
         android:label="RunFragment" >
         <action
             android:id="@+id/action_runFragment_to_startFragment"
@@ -27,11 +38,133 @@
     </fragment>
     <fragment
         android:id="@+id/trackingFragment"
-        android:name="com.example.mysportproject.ui.TrackingFragment"
+        android:name="com.example.mysportproject.ui.fragments.running.TrackingFragment"
         android:label="fragment_tracking"
         tools:layout="@layout/fragment_tracking" >
         <action
             android:id="@+id/action_trackingFragment_to_runFragment"
             app:destination="@id/runFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.mysportproject.ui.startFragments.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.mysportproject.ui.startFragments.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+        <action
+            android:id="@+id/action_signUpFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.mysportproject.ui.startFragments.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reportsFragment"
+        android:name="com.example.mysportproject.ui.fragments.reports.DailyReportsFragment"
+        android:label="fragment_reports"
+        tools:layout="@layout/fragment_daily_reports" >
+        <action
+            android:id="@+id/action_reportsFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+        <action
+            android:id="@+id/action_reportsFragment_to_reportsDetailsFragment"
+            app:destination="@id/reportsDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reportsDetailsFragment"
+        android:name="com.example.mysportproject.ui.fragments.reports.ReportsDetailsFragment"
+        android:label="fragment_reports_details"
+        tools:layout="@layout/fragment_reports_details" >
+        <action
+            android:id="@+id/action_reportsDetailsFragment_to_reportsFragment"
+            app:destination="@id/reportsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fitnessMainFragment"
+        android:name="com.example.mysportproject.ui.fragments.fitness.FitnessMainFragment"
+        android:label="fragment_fitness_main"
+        tools:layout="@layout/fragment_fitness_main" >
+        <action
+            android:id="@+id/action_fitnessMainFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+        <action
+            android:id="@+id/action_fitnessMainFragment_to_pressSelectLevelFragment"
+            app:destination="@id/pressSelectLevelFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pressSelectLevelFragment"
+        android:name="com.example.mysportproject.ui.fragments.fitness.SelectLevelFragment"
+        android:label="fragment_press_select_level"
+        tools:layout="@layout/fragment_press_select_level" >
+        <action
+            android:id="@+id/action_pressSelectLevelFragment_to_fitnessMainFragment"
+            app:destination="@id/fitnessMainFragment" />
+        <action
+            android:id="@+id/action_pressSelectLevelFragment_to_pressDaysFragment"
+            app:destination="@id/pressDaysFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pressDaysFragment"
+        android:name="com.example.mysportproject.ui.fragments.fitness.DaysFragment"
+        android:label="fragment_press_days"
+        tools:layout="@layout/fragment_press_days" >
+        <action
+            android:id="@+id/action_pressDaysFragment_to_exerciseListFragment"
+            app:destination="@id/exerciseListFragment" />
+        <action
+            android:id="@+id/action_pressDaysFragment_to_pressSelectLevelFragment"
+            app:destination="@id/pressSelectLevelFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/exerciseListFragment"
+        android:name="com.example.mysportproject.ui.fragments.fitness.ExerciseListFragment"
+        android:label="fragment_exercise_list"
+        tools:layout="@layout/fragment_exercise_list" >
+        <action
+            android:id="@+id/action_exerciseListFragment_to_waitingFragment2"
+            app:destination="@id/waitingFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/exerciseFragment"
+        android:name="com.example.mysportproject.ui.fragments.fitness.ExerciseFragment"
+        android:label="fragment_exercise"
+        tools:layout="@layout/fragment_exercise" >
+        <action
+            android:id="@+id/action_exerciseFragment_to_dayFinishFragment"
+            app:destination="@id/dayFinishFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dayFinishFragment"
+        android:name="com.example.mysportproject.ui.fragments.fitness.DayFinishFragment"
+        android:label="fragment_day_finish"
+        tools:layout="@layout/fragment_day_finish" >
+        <action
+            android:id="@+id/action_dayFinishFragment_to_pressDaysFragment"
+            app:destination="@id/pressDaysFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/waitingFragment2"
+        android:name="com.example.mysportproject.ui.fragments.fitness.WaitingFragment"
+        android:label="WaitingFragment" >
+        <action
+            android:id="@+id/action_waitingFragment2_to_exerciseFragment"
+            app:destination="@id/exerciseFragment" />
     </fragment>
 </navigation>

@@ -69,6 +69,12 @@ dependencies {
     implementation ("pub.devrel:easypermissions:3.0.0")
     //Timber
     implementation ("com.jakewharton.timber:timber:4.7.1")
+    // MPAndroidChart
+    implementation ("com.github.PhilJay:MPAndroidChart:v3.1.0")
+
+    implementation("com.google.android.material:material:1.12.0")
+
+    implementation("pl.droidsonroids.gif:android-gif-drawable:1.2.28")
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

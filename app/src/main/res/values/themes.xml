@@ -3,6 +3,8 @@
     <style name="Base.Theme.MySportProject" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/grey_black</item>
+        <item name="colorContainer">@color/grey_black</item>
     </style>
 
     <style name="Theme.MySportProject" parent="Base.Theme.MySportProject" />
