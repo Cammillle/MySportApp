@@ -5,6 +5,34 @@
 
     <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCHEUl5iRbAWHQkidrlBUG-eNGeN4CCbD0</string>
 
+    <string name="error_0">Can\'t be 0</string>
+    <string name="error_too_big">Wow! That\'s too much.</string>
+    <string name="error_toast_connection">Please check your connection</string>
+    <string name="error_recipes_no_found">No recipes found by this query</string>
+    <string name="error_connection">Problems with internet connection. Sorry for inconvenience</string>
+    <string name="error_specify_product_name">Please specify product name</string>
+    <string name="error_grams">Grams can\'t be 0</string>
+    <string name="error_calories">Calories can\'t be 0</string>
+    <string name="error_specify_proteins">Please specify proteins</string>
+    <string name="error_specify_fats">Please specify fats</string>
+    <string name="error_specify_carbs">Please specify carbs</string>
+    <string name="error_recipes_query">Please check your query. It could be too short.</string>
+
+    <string name="activity_little_or_no">Little or no</string>
+    <string name="activity_light_exercise">Light Exercise</string>
+    <string name="activity_moderate_exercise">Moderate exercise</string>
+    <string name="activity_hard_exercise">Hard exercise</string>
+    <string name="activity_very_hard_exercise">Very hard exercise</string>
+    <string name="sex_male">Male</string>
+    <string name="sex_female">Female</string>
+    <string name="intro_my_meals_title">Here you can create your own products!</string>
+    <string name="intro_my_meals_desc">When product is created, you can delete it by swiping left</string>
+    <string name="toast_product_deleted">Product deleted</string>
+    <string name="error_bigger_than">Bigger than %1$d</string>
+    <string name="toast_invalid_number">Invalid number</string>
+    <string name="error_exceed_nutrients">Nutrients can not exceed %.1f grams!</string>
+
+
     <string-array name="spinner">
         <item>Date</item>
         <item>Time</item>

@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.example.mysportproject.R
 import com.example.mysportproject.databinding.FragmentNutritionBinding
 
@@ -22,6 +23,12 @@ class NutritionFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         with(binding){
+            bAddBreakfast.setOnClickListener{
+                findNavController().navigate(R.id.action_nutritionFragment_to_addCustomProductFragment)
+
+            }
+
+
         }
     }
 

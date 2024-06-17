@@ -7,5 +7,52 @@
         <item name="colorContainer">@color/grey_black</item>
     </style>
 
+    <style name="CollapsingToolbar">
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="contentScrim">@color/colorAccent</item>
+        <item name="scrimAnimationDuration">300</item>
+        <item name="scrimVisibleHeightTrigger">60dp</item>
+        <item name="layout_scrollFlags">scroll|exitUntilCollapsed</item>
+        <item name="expandedTitleTextAppearance">@style/CollapsingToolbar.Title</item>
+
+    </style>
+
+    <style name="TextUsualBlackSmall">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TitleBold">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+    <style name="CardViewUsual">
+        <item name="android:layout_marginStart">2dp</item>
+        <item name="android:layout_marginEnd">2dp</item>
+        <item name="cardBackgroundColor">@color/statusBar</item>
+        <item name="cardPreventCornerOverlap">false</item>
+        <item name="cardUseCompatPadding">true</item>
+        <item name="cardCornerRadius">8dp</item>
+    </style>
+
+    <style name="ToolBarTheme" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:colorControlNormal">@color/black</item>
+        <item name="android:textColorSecondary">@color/black</item>
+    </style>
+
+    <style name="TextUsualBold">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CollapsingToolbar.Title" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorText</item>
+    </style>
+
     <style name="Theme.MySportProject" parent="Base.Theme.MySportProject" />
 </resources>

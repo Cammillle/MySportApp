@@ -9,6 +9,24 @@
     <color name="checked_blue">#1B85F3</color>
     <color name="dark_blue">#235E9A</color>
 
+    <color name="colorText">#000000</color>
+
+
+    <color name="statusBar">#FFFCF7</color>
+    <color name="arrow_ripple">#8E8E8E</color>
+    <color name="delete_ripple">#8E8E8E</color>
+    <color name="cardViewColor">#F7F7F7</color>
+    <color name="green">#00FF00</color>
+    <color name="fab_background">#888888</color>
+    <color name="detailed_card">#F9F8F8</color>
+    <color name="background">#FFFCF7</color>
+    <color name="recipesSearchBarColor">#6E6E6E</color>
+    <color name="home_card_color">#FFF5DD</color>
+    <color name="water_card">#FFFCF1</color>
+    <color name="search_bar_color">#FFD59E</color>
+    <color name="preference_title">#53B4DF</color>
+    <color name="delete_account">#FF5722</color>
+
 
 
 

@@ -178,5 +178,17 @@
         <action
             android:id="@+id/action_nutritionFragment_to_startFragment"
             app:destination="@id/startFragment" />
+        <action
+            android:id="@+id/action_nutritionFragment_to_addCustomProductFragment"
+            app:destination="@id/addCustomProductFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addCustomProductFragment"
+        android:name="com.example.mysportproject.ui.fragments.nutrition.AddCustomProductFragment"
+        android:label="fragment_add_custom_product"
+        tools:layout="@layout/fragment_add_custom_product" >
+        <action
+            android:id="@+id/action_addCustomProductFragment_to_nutritionFragment"
+            app:destination="@id/nutritionFragment" />
     </fragment>
 </navigation>
