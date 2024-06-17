@@ -4,7 +4,9 @@ import androidx.room.ColumnInfo
 import androidx.room.Embedded
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import com.example.mysportproject.ui.fragments.nutrition.models.BasicNutrientType
 import com.example.mysportproject.ui.fragments.nutrition.models.Product
+import com.example.mysportproject.ui.fragments.nutrition.models.StatisticsNutrientType
 import kotlin.math.roundToInt
 
 

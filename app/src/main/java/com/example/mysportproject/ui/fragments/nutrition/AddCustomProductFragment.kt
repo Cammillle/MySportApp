@@ -8,22 +8,20 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.content.res.AppCompatResources.getDrawable
-import androidx.core.content.ContextCompat
 import androidx.core.content.res.ResourcesCompat
 import androidx.lifecycle.ViewModelProvider
 import com.example.mysportproject.R
 import com.example.mysportproject.databinding.FragmentAddCustomProductBinding
-import com.example.mysportproject.databinding.FragmentNutritionBinding
 import com.example.mysportproject.ui.fragments.nutrition.util.toFloatOrZero
 import com.example.mysportproject.ui.fragments.nutrition.util.toast
+import com.example.mysportproject.ui.fragments.nutrition.viewmodels.AddCustomProductViewModel
 
 class AddCustomProductFragment : Fragment() {
     lateinit var binding: FragmentAddCustomProductBinding
 
     lateinit var modelFactory: ViewModelProvider.Factory
     private val addViewModel by lazy {
-        ViewModelProvider(this, modelFactory).get(NutritionViewModel::class.java)
+        ViewModelProvider(this, modelFactory).get(AddCustomProductViewModel::class.java)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {

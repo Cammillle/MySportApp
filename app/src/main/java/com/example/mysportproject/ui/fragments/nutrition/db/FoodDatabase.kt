@@ -5,6 +5,7 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
+import com.example.mysportproject.db.Converters
 import com.example.mysportproject.ui.fragments.nutrition.dao.FoodProductDao
 import com.example.mysportproject.ui.fragments.nutrition.models.FoodProduct
 import com.example.mysportproject.ui.fragments.nutrition.models.day.Meal

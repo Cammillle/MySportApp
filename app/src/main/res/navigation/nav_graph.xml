@@ -25,8 +25,8 @@
             android:id="@+id/action_startFragment_to_fitnessMainFragment"
             app:destination="@id/fitnessMainFragment" />
         <action
-            android:id="@+id/action_startFragment_to_nutritionFragment"
-            app:destination="@id/nutritionFragment" />
+            android:id="@+id/action_startFragment_to_secondIntroductionFragment"
+            app:destination="@id/secondIntroductionFragment" />
     </fragment>
     <fragment
         android:id="@+id/runFragment"
@@ -176,9 +176,6 @@
         android:label="fragment_nutrition"
         tools:layout="@layout/fragment_nutrition" >
         <action
-            android:id="@+id/action_nutritionFragment_to_startFragment"
-            app:destination="@id/startFragment" />
-        <action
             android:id="@+id/action_nutritionFragment_to_addCustomProductFragment"
             app:destination="@id/addCustomProductFragment" />
     </fragment>
@@ -189,6 +186,33 @@
         tools:layout="@layout/fragment_add_custom_product" >
         <action
             android:id="@+id/action_addCustomProductFragment_to_nutritionFragment"
+            app:destination="@id/nutritionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/firstIntroductionFragment"
+        android:name="com.example.mysportproject.ui.fragments.nutrition.intro.FirstIntroductionFragment"
+        android:label="fragment_first_introduction"
+        tools:layout="@layout/fragment_first_introduction" >
+        <action
+            android:id="@+id/action_firstIntroductionFragment_to_thirdIntroductionFragment"
+            app:destination="@id/thirdIntroductionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondIntroductionFragment"
+        android:name="com.example.mysportproject.ui.fragments.nutrition.intro.SecondIntroductionFragment"
+        android:label="fragment_second_introduction"
+        tools:layout="@layout/fragment_second_introduction" >
+        <action
+            android:id="@+id/action_secondIntroductionFragment_to_firstIntroductionFragment"
+            app:destination="@id/firstIntroductionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirdIntroductionFragment"
+        android:name="com.example.mysportproject.ui.fragments.nutrition.intro.ThirdIntroductionFragment"
+        android:label="fragment_third_introduction"
+        tools:layout="@layout/fragment_third_introduction" >
+        <action
+            android:id="@+id/action_thirdIntroductionFragment_to_nutritionFragment"
             app:destination="@id/nutritionFragment" />
     </fragment>
 </navigation>

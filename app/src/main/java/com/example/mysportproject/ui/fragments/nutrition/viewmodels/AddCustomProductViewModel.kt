@@ -1,4 +1,4 @@
-package com.example.mysportproject.ui.fragments.nutrition
+package com.example.mysportproject.ui.fragments.nutrition.viewmodels
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -7,7 +7,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
-class NutritionViewModel @Inject internal constructor (private val foodRepository: FoodRepository):ViewModel() {
+class AddCustomProductViewModel @Inject internal constructor (private val foodRepository: FoodRepository):ViewModel() {
 
     fun exceeds(gramsInOnePortion: Float, nutrient: Float): Boolean =
         gramsInOnePortion < nutrient && gramsInOnePortion != 0f

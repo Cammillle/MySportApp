@@ -4,9 +4,17 @@ import android.util.JsonReader
 import android.util.JsonWriter
 import android.util.Log
 import androidx.room.TypeConverter
+import com.example.mysportproject.ui.fragments.nutrition.models.FoodProduct
+import com.example.mysportproject.ui.fragments.nutrition.models.MeasureType
+import com.example.mysportproject.ui.fragments.nutrition.models.MonthEnum
 import com.example.mysportproject.ui.fragments.nutrition.models.Product
+import com.example.mysportproject.ui.fragments.nutrition.models.RecentProduct
+import com.example.mysportproject.ui.fragments.nutrition.models.day.Day
+import com.example.mysportproject.ui.fragments.nutrition.models.day.DayDate
 import com.example.mysportproject.ui.fragments.nutrition.models.day.Meal
 import com.example.mysportproject.ui.fragments.nutrition.models.day.MealType
+import com.example.mysportproject.ui.fragments.nutrition.util.TAG
+import com.google.gson.Gson
 import java.io.IOException
 import java.io.StringReader
 import java.io.StringWriter
